@@ -1,0 +1,44 @@
+---
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+---
+
+<Card class="bg-gray-800/50 backdrop-blur-sm border-gray-700/50">
+  <CardHeader>
+    <CardTitle class="flex items-center text-2xl">
+      <span class="text-3xl mr-3">📬</span>
+      联系我
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <p class="text-lg mb-8 text-gray-300">
+      如果你对我的工作感兴趣或者想合作，请通过以下方式联系我：
+    </p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <Button variant="outline" class="flex items-center p-4 h-auto justify-start">
+        <div class="text-2xl mr-4">✉️</div>
+        <div class="text-left">
+          <div class="text-gray-400 text-sm">邮箱</div>
+          <div class="font-medium">liueic@ciallo.cv</div>
+        </div>
+      </Button>
+      
+      <Button variant="outline" class="flex items-center p-4 h-auto justify-start">
+        <div class="text-2xl mr-4">🐙</div>
+        <div class="text-left">
+          <div class="text-gray-400 text-sm">GitHub</div>
+          <div class="font-medium">github.com/liueic</div>
+        </div>
+      </Button>
+      
+      <Button variant="outline" class="flex items-center p-4 h-auto justify-start">
+        <div class="text-2xl mr-4">💼</div>
+        <div class="text-left">
+          <div class="text-gray-400 text-sm">网站</div>
+          <div class="font-medium">juniortree.com</div>
+        </div>
+      </Button>
+    </div>
+  </CardContent>
+</Card>

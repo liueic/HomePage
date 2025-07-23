@@ -1,0 +1,24 @@
+---
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+---
+
+<Card class="bg-gray-800/50 backdrop-blur-sm border-gray-700/50">
+  <CardHeader>
+    <CardTitle class="flex items-center text-2xl">
+      <span class="text-3xl mr-3">🌟</span>
+      关于我
+    </CardTitle>
+    <CardDescription></CardDescription>
+  </CardHeader>
+  <CardContent>
+    <p class="text-lg mb-6 text-gray-300 leading-relaxed">
+      你好，我是小树，来自首都师范大学生命科学学院，目前就读专业为生物科学（非师范），本科生，我对后端开发和云原生充满兴趣，未来可能会从事一些生物信息学的工作
+    </p>
+    <div class="flex flex-wrap gap-2">
+      <Badge variant="secondary">后端开发</Badge>
+      <Badge variant="secondary">云原生</Badge>
+      <Badge variant="secondary">生物信息学</Badge>
+    </div>
+  </CardContent>
+</Card>

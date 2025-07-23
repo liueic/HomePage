@@ -1,0 +1,36 @@
+---
+import { Button } from "../components/ui/button";
+---
+
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shadcn/UI 测试页面</title>
+  </head>
+  <body class="bg-gray-900 text-gray-100 min-h-screen p-8">
+    <div class="max-w-4xl mx-auto">
+      <h1 class="text-3xl font-bold mb-8">Shadcn/UI 组件测试</h1>
+      
+      <div class="space-y-4">
+        <h2 class="text-2xl font-semibold">按钮组件测试</h2>
+        
+        <div class="flex flex-wrap gap-4">
+          <Button>默认按钮</Button>
+          <Button variant="destructive">危险按钮</Button>
+          <Button variant="outline">轮廓按钮</Button>
+          <Button variant="secondary">次要按钮</Button>
+          <Button variant="ghost">幽灵按钮</Button>
+          <Button variant="link">链接按钮</Button>
+        </div>
+        
+        <div class="flex flex-wrap gap-4 mt-4">
+          <Button size="sm">小按钮</Button>
+          <Button size="default">默认按钮</Button>
+          <Button size="lg">大按钮</Button>
+          <Button size="icon">图标</Button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
