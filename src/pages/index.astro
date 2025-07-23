@@ -1,0 +1,132 @@
+---
+import '../styles/global.css';
+---
+
+<html lang="zh-CN" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>我的个人主页</title>
+    <meta name="description" content="我的个人作品集和简介" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- 引入Font Awesome图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+  <body class="bg-gray-900 text-gray-100 min-h-screen font-sans">
+    <div class="max-w-4xl mx-auto px-6 py-12">
+      <!-- 头部区域 -->
+      <header class="mb-16 text-center">
+        <div class="mb-8">
+          <div class="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-cyan-400 to-purple-500 p-1">
+            <div class="w-full h-full rounded-full bg-gray-900 flex items-center justify-center">
+              <span class="text-5xl">👨‍💻</span>
+            </div>
+          </div>
+        </div>
+        
+        <h1 class="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+          你好，我是小树
+        </h1>
+        <p class="text-xl text-gray-400 max-w-2xl mx-auto font-light mb-8">
+          你应当选择你热爱的，只有真正热爱的东西才能倾注一切
+        </p>
+        
+        <!-- 社交媒体链接按钮 -->
+        <div class="flex justify-center space-x-6">
+          <a href="https://github.com/liueic" target="_blank" 
+             class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gray-800 border border-gray-700 text-gray-300 hover:bg-gray-700 hover:text-white transition-all duration-300 group">
+            <i class="fab fa-github text-xl group-hover:scale-110 transition-transform"></i>
+          </a>
+          
+          <a href="https://www.juniortree.com" target="_blank" 
+             class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gray-800 border border-gray-700 text-gray-300 hover:bg-blue-600 hover:text-white transition-all duration-300 group">
+            <i class="fas fa-blog text-xl group-hover:scale-110 transition-transform"></i>
+          </a>
+          
+          <a href="mailto:liueic@ciallo.cv" 
+             class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gray-800 border border-gray-700 text-gray-300 hover:bg-red-600 hover:text-white transition-all duration-300 group">
+            <i class="fas fa-envelope text-xl group-hover:scale-110 transition-transform"></i>
+          </a>
+        </div>
+      </header>
+
+      <main>
+        <!-- 关于我区域 -->
+        <section class="mb-16">
+          <div class="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/50">
+            <div class="flex items-center mb-6">
+              <div class="text-3xl mr-3">🌟</div>
+              <h2 class="text-2xl font-bold">关于我</h2>
+            </div>
+            <p class="text-lg mb-6 text-gray-300 leading-relaxed">
+              你好，我是小树，来自首都师范大学生命科学学院，目前就读专业为生物科学（非师范），本科生，我对后端开发和云原生充满兴趣，未来可能会从事一些生物信息学的工作
+            </p>
+          </div>
+        </section>
+
+        <!-- 技能展示区域 -->
+        <section class="mb-16">
+          <div class="flex items-center mb-8">
+            <div class="text-3xl mr-3">🚀</div>
+            <h2 class="text-2xl font-bold">技术栈</h2>
+          </div>
+          <div class="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/50">
+            <div class="flex justify-center">
+              <img 
+                src="https://skillicons.dev/icons?perline=14&i=astro,bash,devto,discord,docker,electron,git,github,githubactions,go,html,idea,java,js,linux,md,mysql,netlify,nextjs,nginx,nodejs,ps,planetscale,postman,py,pytorch,qt,react,redis,ros,rust,sqlite,stackoverflow,solidjs,svg,tailwind,tauri,threejs,twitter,ts,vercel,vite,vscode,vue,workers,zig" 
+                alt="技术栈图标"
+                class="w-full max-w-4xl"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- 联系我区域 -->
+        <section>
+          <div class="flex items-center mb-8">
+            <div class="text-3xl mr-3">📬</div>
+            <h2 class="text-2xl font-bold">联系我</h2>
+          </div>
+          <div class="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/50">
+            <p class="text-lg mb-8 text-gray-300">
+              如果你对我的工作感兴趣或者想合作，请通过以下方式联系我：
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <a href="mailto:email@example.com" class="flex items-center p-4 bg-gray-700/30 rounded-xl hover:bg-cyan-900/20 transition-all duration-300 group">
+                <div class="text-2xl mr-4 group-hover:scale-110 transition-transform">✉️</div>
+                <div>
+                  <div class="text-gray-400 text-sm">邮箱</div>
+                  <div class="font-medium">email@example.com</div>
+                </div>
+              </a>
+              
+              <a href="https://github.com/username" target="_blank" class="flex items-center p-4 bg-gray-700/30 rounded-xl hover:bg-purple-900/20 transition-all duration-300 group">
+                <div class="text-2xl mr-4 group-hover:scale-110 transition-transform">🐙</div>
+                <div>
+                  <div class="text-gray-400 text-sm">GitHub</div>
+                  <div class="font-medium">github.com/username</div>
+                </div>
+              </a>
+              
+              <a href="https://linkedin.com/in/username" target="_blank" class="flex items-center p-4 bg-gray-700/30 rounded-xl hover:bg-blue-900/20 transition-all duration-300 group">
+                <div class="text-2xl mr-4 group-hover:scale-110 transition-transform">💼</div>
+                <div>
+                  <div class="text-gray-400 text-sm">LinkedIn</div>
+                  <div class="font-medium">linkedin.com/in/username</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- 页脚 -->
+      <footer class="mt-16 pt-8 border-t border-gray-800 text-center text-gray-500">
+        <p>© {new Date().getFullYear()} 我的个人主页. 使用 Astro & Tailwind CSS 构建</p>
+      </footer>
+    </div>
+  </body>
+</html>
